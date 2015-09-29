@@ -17,7 +17,7 @@ except (IOError, ImportError, OSError):
 exec(open('metadata/version.py').read())
 
 setup(
-    name='OpenElections Metadata',
+    name='openelections-metadata',
     version=__version__,
     author='OpenElections',
     author_email='openelections@gmail.com',
