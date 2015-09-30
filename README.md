@@ -23,7 +23,7 @@ To make a request, you'll need to specify the state you're interested in and any
 >>> r = metadata.Request('MD', '2014-01-01')
 ```
 
-`Request` objects retain details about the parameters and also save the API url and the JSON response, if needed. Calling the `parse` method on the `Request` object creates individual `Election` objects, which have the same attributes as the API, with one addition:
+`Request` objects retain details about the parameters and also save the API url and the JSON response, if needed. Calling the `parse` method on the `Request` object creates individual `Election` objects, which have the same attributes as the API, with one addition - it has a `generated_filename` attribute that we use in the data processing pipeline.
 
 ```python
 >>> elections = r.parse()
